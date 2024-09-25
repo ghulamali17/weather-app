@@ -1,25 +1,28 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif; 
 }
-body{
+
+body {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     overflow-x: hidden;
     color: white;
     padding: 25px;
 }
 
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-h1{
+
+h1 {
     font-size: 40px;
     text-align: center;   
 }
-.weatherApp{
+
+.weatherApp {
     border-radius: 10px; 
     width: 100%; 
     max-width: 280px; 
@@ -34,11 +37,12 @@ h1{
     align-items: center;
     border: 2px solid #007bff;
     border-radius: 25px; 
-    padding: 5px 10px; 
+    padding: 5px; /* Adjusted padding for better fit */
     background-color: #f8f9fa; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    width: 260px; 
-    transition: box-shadow 0.3s; /
+    width: 100%; /* Set to 100% for full width on small screens */
+    max-width: 260px; /* Adjusted max width */
+    transition: box-shadow 0.3s;
 }
 
 .search:hover {
@@ -65,31 +69,37 @@ h1{
 .searchBtn:hover {
     color: #0056b3; 
 }
-.leftContent,.rightContent{
+
+.leftContent, .rightContent {
     margin-top: 20px;
 }
-.humiditybox,.windBox{
+
+.humiditybox, .windBox {
     display: flex;
     gap: 6px;
 }
-.details{
+
+.details {
     display: flex;
     gap: 20px;
 }
-.error{
+
+.error {
     margin-top: 15px;
     color: red;
     font-size: 20px;
     display: none;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
-
     .details {
         display: flex;
         flex-direction: column;
-    
     }
-  
 
+    .search {
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
 }
