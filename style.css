@@ -20,9 +20,9 @@ h1{
     text-align: center;   
 }
 .weatherApp{
-    border-radius: 10px; /* Add border radius for a smoother look */
-    width: 100%; /* Make it responsive */
-    max-width: 280px; /* Keep a max width */
+    border-radius: 10px; 
+    width: 100%; 
+    max-width: 280px; 
     background-color: black;
     color: white;
     padding: 20px;
@@ -37,7 +37,7 @@ h1{
     padding: 5px 10px; 
     background-color: #f8f9fa; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    width: 250px; 
+    width: 260px; 
     transition: box-shadow 0.3s; /
 }
 
@@ -82,16 +82,14 @@ h1{
     font-size: 20px;
     display: none;
 }
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
 
     .details {
         display: flex;
         flex-direction: column;
-        /* text-align: center; */
+    
     }
-    /* .weatherApp{
-        text-align: center;
-    } */
+  
 
 }
